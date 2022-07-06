@@ -1,0 +1,72 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+
+
+bool Divisible(int a, int b) {
+    int remainder = a % b; // Calculate the remainder of a and b.
+
+    if(remainder == 0) {
+        return true; //If the remainder is 0, the numbers are divisible.
+    } else {
+        return false; // Otherwise, they aren't.
+    }
+}
+
+
+bool isPrime(int n,int i){
+        if(n<=2){
+            return (n==2)? true : false;
+        }
+        if(n%i==0){
+            return false;
+        }
+        if(i*i>n){
+            return true;
+        }
+        
+        return isPrime(n,i+1);
+    }
+    //int main()
+
+
+
+int main()
+
+
+
+{
+  //  cout<<"Hello World";
+    int num = 56;
+    
+    
+    bool res = Divisible(56,2);
+    bool ans = isPrime(num,2);
+    
+    cout<<ans<<endl;
+    cout<<res<<endl;
+
+    return 0;
+}
